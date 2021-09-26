@@ -1,8 +1,8 @@
-package com.challenge.backend.model;
+package com.challenge.backend.domain.entity;
 
 import java.util.ArrayList;
 
-public class Character {
+public class CharacterEntity {
 
     private Integer id;
     private String name;
@@ -10,8 +10,8 @@ public class Character {
     private String species;
     private String type;
     private String gender;
-    private OriginCharacter origin;
-    private Object location;
+    private OriginCharacterEntity origin;
+    private OriginCharacterEntity location;
     private String image;
     private ArrayList episode;
     private String url;
@@ -65,19 +65,19 @@ public class Character {
         this.gender = gender;
     }
 
-    public OriginCharacter getOrigin() {
+    public OriginCharacterEntity getOrigin() {
         return origin;
     }
 
-    public void setOrigin(OriginCharacter origin) {
+    public void setOrigin(OriginCharacterEntity origin) {
         this.origin = origin;
     }
 
-    public Object getLocation() {
+    public OriginCharacterEntity getLocation() {
         return location;
     }
 
-    public void setLocation(Object location) {
+    public void setLocation(OriginCharacterEntity location) {
         this.location = location;
     }
 

@@ -1,8 +1,8 @@
-package com.challenge.backend.model;
+package com.challenge.backend.domain.entity;
 
 import java.util.ArrayList;
 
-public class Location {
+public class LocationEntity {
     private Integer id;
     private String name;
     private String type;

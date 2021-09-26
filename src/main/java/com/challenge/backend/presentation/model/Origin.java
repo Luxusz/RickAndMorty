@@ -1,12 +1,17 @@
-package com.challenge.backend.model;
+package com.challenge.backend.presentation.model;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.ArrayList;
 
 public class Origin {
-
+    @JsonProperty("name")
     private String name;
+    @JsonProperty("url")
     private String url;
+    @JsonProperty("dimension")
     private String dimension;
+    @JsonProperty("residents")
     private ArrayList residents;
 
     public String getName() {
@@ -33,8 +38,8 @@ public class Origin {
         this.dimension = dimension;
     }
 
-    public ArrayList getResidents() {
-        return residents;
+    public ArrayList getResidents(ArrayList residents) {
+        return this.residents;
     }
 
     public void setResidents(ArrayList residents) {

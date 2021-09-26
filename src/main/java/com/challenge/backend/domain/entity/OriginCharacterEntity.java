@@ -1,6 +1,6 @@
-package com.challenge.backend.model;
+package com.challenge.backend.domain.entity;
 
-public class OriginCharacter {
+public class OriginCharacterEntity {
 
     private String name;
     private String url;

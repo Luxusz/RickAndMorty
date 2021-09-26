@@ -1,4 +1,4 @@
-package com.challenge.backend.config;
+package com.challenge.backend.common.config;
 
 import org.springframework.context.annotation.Bean;
 import static springfox.documentation.builders.PathSelectors.regex;
