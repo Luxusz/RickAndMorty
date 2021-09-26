@@ -5,7 +5,10 @@ import com.challenge.backend.model.Location;
 import com.challenge.backend.model.Origin;
 import com.challenge.backend.model.Root;
 import org.springframework.stereotype.Component;
-
+/**
+ * @author Francisco
+ *
+ */
 @Component
 public class ResourceMapper {
 

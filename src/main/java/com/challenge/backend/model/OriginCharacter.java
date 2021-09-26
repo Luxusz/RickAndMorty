@@ -1,7 +1,5 @@
 package com.challenge.backend.model;
 
-import io.swagger.annotations.ApiModel;
-
 public class OriginCharacter {
 
     private String name;

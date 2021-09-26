@@ -1,7 +1,5 @@
 package com.challenge.backend.model;
 
-import io.swagger.annotations.ApiModel;
-
 import java.util.ArrayList;
 
 public class Character {

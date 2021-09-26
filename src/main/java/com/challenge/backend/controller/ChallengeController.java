@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.challenge.backend.controller;
 
 import com.challenge.backend.model.Root;
@@ -15,15 +12,15 @@ import org.springframework.web.bind.annotation.*;
  *
  */
 @RestController
-@RequestMapping("/proyecto")
+@RequestMapping("/challenge")
 @CrossOrigin(origins = "*")
 public class ChallengeController {
 
     @Autowired
     private ChallengeServiceImpl service;
 
-    @GetMapping(value = "/getCharacterInfo", produces = "application/json")
-    public ResponseEntity<Root> getInfo(@RequestParam String id) throws Exception {
+    @GetMapping(value = "/getCharacterInfo/{id}", produces = "application/json")
+    public ResponseEntity<Root> getInfo(@PathVariable("id") String id) throws Exception {
         Root mensaje = null;
         try{
             if(!id.isEmpty()){
@@ -33,6 +30,12 @@ public class ChallengeController {
             throw new Exception();
         }
         return new ResponseEntity<>(mensaje, HttpStatus.OK);
+    }
+
+    @ExceptionHandler(IllegalArgumentException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public final String exceptionHandlerIllegalArgumentException(final IllegalArgumentException e) {
+        return '"' + e.getMessage() + '"';
     }
 
 }

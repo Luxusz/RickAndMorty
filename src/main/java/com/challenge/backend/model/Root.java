@@ -5,13 +5,19 @@ import io.swagger.annotations.ApiModel;
 
 @ApiModel
 public class Root {
+    @JsonProperty("id")
     private Integer id;
+    @JsonProperty("name")
     private String name;
+    @JsonProperty("status")
     private String status;
+    @JsonProperty("species")
     private String species;
+    @JsonProperty("type")
     private String type;
     @JsonProperty("episode_count")
     private Integer episodeCount;
+    @JsonProperty("origin")
     private Origin origin;
 
     public Integer getId() {
