@@ -12,7 +12,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import static com.challenge.backend.common.enumeration.LogTagEnum.TAG_SUCCESS_ENTITY;
-import static com.challenge.backend.common.enumeration.LogTagEnum.TAG_SUCCESS_LOCATION;
 
 @Service
 @Log4j2

@@ -1,7 +1,7 @@
 package com.challenge.backend.data.repository.impl;
 
-import com.challenge.backend.domain.repository.CharacterRepository;
 import com.challenge.backend.domain.entity.CharacterEntity;
+import com.challenge.backend.domain.repository.CharacterRepository;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;

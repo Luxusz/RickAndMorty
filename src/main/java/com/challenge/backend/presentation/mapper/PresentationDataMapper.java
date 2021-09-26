@@ -2,8 +2,8 @@ package com.challenge.backend.presentation.mapper;
 
 import com.challenge.backend.domain.entity.CharacterResponseEntity;
 import com.challenge.backend.domain.entity.OriginResponseEntity;
-import com.challenge.backend.presentation.model.Origin;
 import com.challenge.backend.presentation.model.CharacterFullInfo;
+import com.challenge.backend.presentation.model.Origin;
 import org.springframework.stereotype.Component;
 /**
  * @author Francisco

@@ -1,7 +1,5 @@
 package com.challenge.backend.domain.entity;
 
-import com.challenge.backend.presentation.model.Origin;
-
 public class CharacterResponseEntity {
 
     private Integer id;

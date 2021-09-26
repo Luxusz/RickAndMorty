@@ -4,7 +4,6 @@ import com.challenge.backend.domain.entity.LocationEntity;
 import com.challenge.backend.domain.repository.LocationRepository;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -13,7 +12,6 @@ import org.springframework.stereotype.Repository;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.Collections;
-import java.util.logging.Logger;
 
 import static com.challenge.backend.common.enumeration.LogTagEnum.TAG_SUCCESS_LOCATION;
 
