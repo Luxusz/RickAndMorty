@@ -26,7 +26,7 @@ public class PresentationDataMapper {
         return characterFullInfo;
     }
 
-    public Origin getOrigin(OriginResponseEntity originResponseEntity){
+    private Origin getOrigin(OriginResponseEntity originResponseEntity){
         Origin origin = new Origin();
         if(originResponseEntity!=null) {
             origin.setDimension(originResponseEntity.getDimension());

@@ -1,6 +1,6 @@
 package com.challenge.backend.domain.repository;
 
-import com.challenge.backend.domain.entity.CharacterEntity;
+import com.challenge.backend.data.entity.CharacterEntity;
 
 public interface CharacterRepository {
 

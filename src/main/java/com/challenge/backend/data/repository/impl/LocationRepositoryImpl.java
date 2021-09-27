@@ -1,6 +1,6 @@
 package com.challenge.backend.data.repository.impl;
 
-import com.challenge.backend.domain.entity.LocationEntity;
+import com.challenge.backend.data.entity.LocationEntity;
 import com.challenge.backend.domain.repository.LocationRepository;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -14,7 +14,10 @@ import org.springframework.web.client.RestTemplate;
 import java.util.Collections;
 
 import static com.challenge.backend.common.enumeration.LogTagEnum.TAG_SUCCESS_LOCATION;
-
+/**
+ * @author Francisco
+ *
+ */
 @Repository
 @Log4j2
 @Qualifier("locationRepository")

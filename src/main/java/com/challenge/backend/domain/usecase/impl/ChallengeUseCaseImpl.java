@@ -1,8 +1,8 @@
 package com.challenge.backend.domain.usecase.impl;
 
-import com.challenge.backend.domain.entity.CharacterEntity;
+import com.challenge.backend.data.entity.CharacterEntity;
+import com.challenge.backend.data.entity.LocationEntity;
 import com.challenge.backend.domain.entity.CharacterResponseEntity;
-import com.challenge.backend.domain.entity.LocationEntity;
 import com.challenge.backend.domain.mapper.ResourceDataMapper;
 import com.challenge.backend.domain.repository.CharacterRepository;
 import com.challenge.backend.domain.repository.LocationRepository;
@@ -12,7 +12,10 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import static com.challenge.backend.common.enumeration.LogTagEnum.TAG_SUCCESS_ENTITY;
-
+/**
+ * @author Francisco
+ *
+ */
 @Service
 @Log4j2
 @Qualifier("challengeUseCase")

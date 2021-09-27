@@ -1,11 +1,14 @@
 package com.challenge.backend.domain.mapper;
 
-import com.challenge.backend.domain.entity.CharacterEntity;
+import com.challenge.backend.data.entity.CharacterEntity;
+import com.challenge.backend.data.entity.LocationEntity;
 import com.challenge.backend.domain.entity.CharacterResponseEntity;
-import com.challenge.backend.domain.entity.LocationEntity;
 import com.challenge.backend.domain.entity.OriginResponseEntity;
 import org.springframework.stereotype.Component;
-
+/**
+ * @author Francisco
+ *
+ */
 @Component
 public class ResourceDataMapper {
 

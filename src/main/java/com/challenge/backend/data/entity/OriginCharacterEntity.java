@@ -1,4 +1,4 @@
-package com.challenge.backend.domain.entity;
+package com.challenge.backend.data.entity;
 
 public class OriginCharacterEntity {
 

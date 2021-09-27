@@ -1,5 +1,8 @@
 package com.challenge.backend.common.enumeration;
-
+/**
+ * @author Francisco
+ *
+ */
 public enum LogTagEnum {
     TAG_SUCCESS_CHARACTER("Successful customer response"),
     TAG_SUCCESS_LOCATION("Successful location response"),
