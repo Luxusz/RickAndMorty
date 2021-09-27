@@ -4,6 +4,7 @@ import com.challenge.backend.domain.entity.CharacterResponseEntity;
 import com.challenge.backend.domain.usecase.ChallengeUseCase;
 import com.challenge.backend.presentation.mapper.PresentationDataMapper;
 import com.challenge.backend.presentation.model.CharacterFullInfo;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +22,6 @@ import static com.challenge.backend.common.enumeration.LogTagEnum.TAG_SUCCESS_FU
 @CrossOrigin(origins = "*")
 public class ChallengeController {
 
-
     private final ChallengeUseCase challengeUseCase;
     private final PresentationDataMapper mapper;
 
@@ -31,6 +31,7 @@ public class ChallengeController {
     }
 
     @GetMapping(value = "/getCharacterInfo/{id}", produces = "application/json")
+    @ApiOperation(value = "Find Complete Character Informationr", notes = "Find by Id")
     public ResponseEntity<CharacterFullInfo> getInfo(@PathVariable("id") String id) throws Exception {
         CharacterFullInfo characterFullInfo = null;
         try{

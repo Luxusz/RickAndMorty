@@ -3,7 +3,7 @@ package com.challenge.backend.presentation.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.swagger.annotations.ApiModel;
 
-@ApiModel
+@ApiModel("Character Full Information")
 public class CharacterFullInfo {
     @JsonProperty("id")
     private Integer id;
